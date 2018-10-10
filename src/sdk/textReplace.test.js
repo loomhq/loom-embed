@@ -12,13 +12,13 @@ describe('textReplace', () => {
 
   test('replaces any occurrances of loom links with the embed code', async () => {
     const mockData1 = {
-      url: 'https://www.loom.com/share/xyz456',
-      html: '<iframe src="https://www.loom.com/share/xyz456"></iframe>'
+      url: 'https://www.loom.com/share/def456',
+      html: '<iframe src="https://www.loom.com/share/def456"></iframe>'
     };
 
     const mockData2 = {
-      url: 'https://www.useloom.com/share/123xyz',
-      html: '<iframe src="https://www.useloom.com/share/123xyz"></iframe>'
+      url: 'https://www.useloom.com/share/123abc',
+      html: '<iframe src="https://www.useloom.com/share/123abc"></iframe>'
     };
 
     const mockData3 = {

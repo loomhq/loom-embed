@@ -1,4 +1,4 @@
-const LOOM_BASE_REGEX_STR = '(https?:\/\/)?(www\.)?((use)?loom\.com\/share\/[A-Za-z0-9]+)';
+const LOOM_BASE_REGEX_STR = '(https?:\/\/)?(www\.)?((use)?loom\.com\/share\/[a-f0-9]+)';
 
 export const LOOM_URL_REGEX = new RegExp(`^${LOOM_BASE_REGEX_STR}$`);
 export const LOOM_URL_MATCH_REGEX = new RegExp(`${LOOM_BASE_REGEX_STR}`, 'g');
