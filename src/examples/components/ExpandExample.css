@@ -1,0 +1,16 @@
+.video-container {
+  max-width: 400px;
+  min-height: 200px;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.loom-video {
+  text-decoration: underline;
+}
+
+.sub-comment {
+  padding-top: 20px;
+}
