@@ -1,6 +1,8 @@
 # loom-embed
 Easy embedding and link expansion of Loom videos
 
+Visit the [Docs](https://cdn.useloom.com/loom-embed/v1.0.0/index.html) for full examples
+
 ## Installing
 
 ### npm package
