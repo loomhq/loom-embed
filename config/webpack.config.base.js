@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -7,8 +8,7 @@ module.exports = {
   },
   mode: 'development',
   devServer: {
-    port: 8989,
-    publicPath: '/assets/'
+    port: 8989
   },
   output: {
     library: 'loom',
@@ -17,27 +17,33 @@ module.exports = {
     filename: '[name].js',
     // Workaround until webpack fixes the global/window umd export issue
     // https://github.com/webpack/webpack/issues/6784
-    globalObject: 'typeof self !== \'undefined\' ? self : this',
+    globalObject: "typeof self !== 'undefined' ? self : this"
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: { loader: "babel-loader" }
+        use: { loader: 'babel-loader' }
       },
       {
         test: /\.css$/,
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" }
-        ]
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       }
     ]
   },
   resolve: {
     alias: {
-      "loom-embed": path.resolve(__dirname, '..', 'src/sdk/')
+      'loom-embed': path.resolve(__dirname, '..', 'src/sdk/')
     }
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    })
+  ]
 };
