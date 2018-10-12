@@ -1,12 +1,13 @@
 {
   "name": "@loomhq/loom-embed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK for easy embedding videos",
-  "main": "index.js",
+  "main": "dist/sdk.js",
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.config.base.js --open",
     "test": "jest --watch",
-    "build": "webpack --config ./config/webpack.config.prod.js"
+    "build": "webpack --config ./config/webpack.config.prod.js",
+    "publish:beta": "npm publish --tag=next"
   },
   "author": "",
   "license": "ISC",

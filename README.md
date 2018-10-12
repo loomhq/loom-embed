@@ -22,7 +22,7 @@ See the [CHANGELOG.md](https://github.com/loomhq/loom-embed/blob/master/CHANGELO
 ## Usage
 
 ```js
-import loom from 'loom-embed'
+import loom from '@loomhq/loom-embed'
 ````
 
 If installed by script tag, the methods are exposed through `window.loom`
