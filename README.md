@@ -1,7 +1,7 @@
 # loom-embed
 Easy embedding and link expansion of Loom videos
 
-Visit the [Docs](https://cdn.useloom.com/loom-embed/v1.0.0/index.html) for full examples
+Visit the [Docs](https://cdn.loom.com/loom-embed/v1.0.0/index.html) for full examples
 
 ## Installing
 
@@ -14,7 +14,7 @@ npm install @loomhq/loom-embed
 ### script tag
 
 ```html
-<script src="https://cdn.useloom.com/loom-embed/v1.0.0/sdk.js"></script>
+<script src="https://cdn.loom.com/loom-embed/v1.0.0/sdk.js"></script>
 ```
 
 See the [CHANGELOG.md](https://github.com/loomhq/loom-embed/blob/master/CHANGELOG.md) for the latest version

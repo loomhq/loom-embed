@@ -6,7 +6,7 @@ import { LINK_REPLACED_CLASS } from '../../sdk/common'
 
 import './ExpandExample.css';
 
-const DEFAULT_LOOM_LINK = "https://www.useloom.com/share/0281766fa2d04bb788eaf19e65135184";
+const DEFAULT_LOOM_LINK = "https://www.loom.com/share/0281766fa2d04bb788eaf19e65135184";
 const INITIAL_STATE = { fetching: false };
 const LINK_SELECTOR = '.loom-video';
 
