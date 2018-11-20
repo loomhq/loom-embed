@@ -16,7 +16,7 @@ class GettingStarted extends Component {
         </InfoBlock>
 
         <InfoBlock title="script tag">
-          <CodeBlock script="<script src=&quot;https://cdn.useloom.com/v1.0.0/sdk.js&quot;></script>" />
+          <CodeBlock script="<script src=&quot;https://cdn.loom.com/v1.0.0/sdk.js&quot;></script>" />
           <p>
             Refer to the{" "}
             <a href="https://github.com/loomhq/loom-embed/blob/master/CHANGELOG.md">

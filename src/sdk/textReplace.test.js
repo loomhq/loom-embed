@@ -17,13 +17,13 @@ describe('textReplace', () => {
     };
 
     const mockData2 = {
-      url: 'https://www.useloom.com/share/123abc',
-      html: '<iframe src="https://www.useloom.com/share/123abc"></iframe>'
+      url: 'https://www.loom.com/share/123abc',
+      html: '<iframe src="https://www.loom.com/share/123abc"></iframe>'
     };
 
     const mockData3 = {
-      url: 'https://www.useloom.com/share/abc123',
-      html: '<iframe src="https://www.useloom.com/share/abc123"></iframe>'
+      url: 'https://www.loom.com/share/abc123',
+      html: '<iframe src="https://www.loom.com/share/abc123"></iframe>'
     };
 
     oembed.default.mockReturnValueOnce({ html: mockData1.html });

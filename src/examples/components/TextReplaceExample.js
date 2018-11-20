@@ -6,7 +6,7 @@ const ORIGINAL_EXAMPLE =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
   "tempor ut labore et dolore magna aliqua. " +
   "\n\n" +
-  "https://www.useloom.com/share/0281766fa2d04bb788eaf19e65135184" +
+  "https://www.loom.com/share/0281766fa2d04bb788eaf19e65135184" +
   "\n\n" +
   "Tincidunt augue interdum velit euismod in pellentesque.";
 

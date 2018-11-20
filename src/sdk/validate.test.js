@@ -3,11 +3,6 @@ import { LINK_REPLACED_CLASS } from './common';
 
 describe('isValidEmbedUrl', () => {
   test('Accepts Loom URLs', () => {
-    expect(isValidEmbedUrl('https://www.useloom.com/share/abc123')).toBeTruthy();
-    expect(isValidEmbedUrl('http://www.useloom.com/share/abc123')).toBeTruthy();
-    expect(isValidEmbedUrl('www.useloom.com/share/abc123')).toBeTruthy();
-    expect(isValidEmbedUrl('useloom.com/share/abc123')).toBeTruthy();
-
     expect(isValidEmbedUrl('https://www.loom.com/share/abc123')).toBeTruthy();
     expect(isValidEmbedUrl('http://www.loom.com/share/abc123')).toBeTruthy();
     expect(isValidEmbedUrl('www.loom.com/share/abc123')).toBeTruthy();
@@ -25,7 +20,7 @@ describe('isValidLinkNode', () => {
     const node = {
       nodeName: 'A',
       className: '',
-      href: 'https://www.useloom.com/share/abc123'
+      href: 'https://www.loom.com/share/abc123'
     };
 
     expect(isValidLinkNode(node)).toBeTruthy();
@@ -35,7 +30,7 @@ describe('isValidLinkNode', () => {
     const node = {
       nodeName: 'A',
       className: LINK_REPLACED_CLASS,
-      href: 'https://www.useloom.com/share/abc123'
+      href: 'https://www.loom.com/share/abc123'
     };
 
     expect(isValidLinkNode(node)).toBeFalsy();

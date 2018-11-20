@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 import { oembed } from "loom-embed";
 
-const ORIGINAL_EXAMPLE = "https://www.useloom.com/share/0281766fa2d04bb788eaf19e65135184";
+const ORIGINAL_EXAMPLE = "https://www.loom.com/share/0281766fa2d04bb788eaf19e65135184";
 
 const INITIAL_STATE = {
   inputText: ORIGINAL_EXAMPLE,
