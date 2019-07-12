@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --config ./config/webpack.config.base.js --open",
     "test": "jest --watch",
     "build": "webpack --config ./config/webpack.config.prod.js",
-    "publish:beta": "npm publish --tag=next"
+    "publish:beta": "npm publish --tag=next",
+    "deploy": "./bin/deploy.sh"
   },
   "author": "",
   "license": "ISC",
