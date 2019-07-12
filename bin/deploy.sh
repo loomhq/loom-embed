@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 current_branch=$(git rev-parse --abbrev-ref HEAD)
-loom_dev_branch="loom.dev"
+loom_dev_branch="gh-pages"
 
 if [ "$current_branch" != "$loom_dev_branch" ]
 then
