@@ -26,6 +26,6 @@ current_date_time=$(date -u "+%d/%m/%y-%H:%M:%S")
 
 git add .
 git commit -m "Deploy: $current_date_time"
-git push origin $loom_dev_branch
+git push origin $loom_dev_branch --force
 
 echo "Done!"
