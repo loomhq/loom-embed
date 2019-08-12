@@ -1,6 +1,6 @@
 {
   "name": "@loomhq/loom-embed",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "SDK for easy embedding videos",
   "main": "dist/sdk.js",
   "scripts": {
