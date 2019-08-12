@@ -1,5 +1,5 @@
-import textReplace from './textReplace';
 import * as oembed from './oembed';
+import textReplace from './textReplace';
 
 describe('textReplace', () => {
   beforeEach(() => {
@@ -63,5 +63,35 @@ describe('textReplace', () => {
     `;
 
     expect(replacedText).toEqual(expectedString)
+  });
+
+  test('Returns and does not modify the input string if it has no loom links', async () => {
+    const sampleString = `
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor ut labore et dolore
+    magna aliqua. Sit amet justo donec enim diam vulputate ut pharetra. Ac
+    felis donec et odio pellentesque.
+
+    https://www.google.com/something
+
+    Tincidunt augue interdum velit euismod in pellentesque. http://www.loom.com/ Nullam non nisi est
+    sit amet facilisis magna etiam. Ut enim blandit volutpat maecenas volutpat
+    blandit.`;
+
+    const replacedText = await textReplace(sampleString);
+
+    expect(replacedText).toEqual(sampleString)
+  });
+
+  test('Returns an empty string if input is null', async () => {
+    const replacedText = await textReplace(null);
+
+    expect(replacedText).toEqual('')
+  });
+
+  test('Returns an empty string if input is undefined', async () => {
+    const replacedText = await textReplace();
+
+    expect(replacedText).toEqual('')
   });
 });
