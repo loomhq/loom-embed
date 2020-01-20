@@ -9,3 +9,7 @@ export const isValidLinkNode = (node) => (
   !node.className.includes(LINK_REPLACED_CLASS) &&
   isValidEmbedUrl(node.href)
 );
+
+export default {
+  isLoomUrl
+};
