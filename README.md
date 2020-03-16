@@ -1,5 +1,10 @@
 # loom-embed
+
 Easy embedding and link expansion of Loom videos
+
+Also known as:
+
+- The Embed SDK
 
 Visit the [Docs](https://cdn.loom.com/loom-embed/v1.0.4/index.html) for full examples
 
