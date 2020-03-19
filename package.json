@@ -9,7 +9,8 @@
     "build": "webpack --config ./config/webpack.config.prod.js",
     "prepublishOnly": "webpack --config ./config/webpack.config.prod.js",
     "publish:beta": "npm publish --tag=next",
-    "deploy": "./bin/deploy.sh"
+    "deployDocs": "./bin/deploy-docs.sh",
+    "deployToCdn": "./bin/deploy-sdk-cdn.sh"
   },
   "author": "",
   "license": "ISC",

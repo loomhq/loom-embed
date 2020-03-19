@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# For repo maintainers only. This publishes
+# updated documentation
+
 current_branch=$(git rev-parse --abbrev-ref HEAD)
 loom_dev_branch="gh-pages"
 
