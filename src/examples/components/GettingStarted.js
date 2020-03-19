@@ -1,4 +1,7 @@
+import * as packageJson from '../../../package.json';
+
 import React, { Component } from "react";
+
 import InfoBlock from "./InfoBlock";
 
 const CodeBlock = ({ script }) => (
@@ -16,7 +19,7 @@ class GettingStarted extends Component {
         </InfoBlock>
 
         <InfoBlock title="script tag">
-          <CodeBlock script="<script src=&quot;https://cdn.loom.com/v1.0.0/sdk.js&quot;></script>" />
+          <CodeBlock script={`<script src="https://cdn.loom.com/${packageJson.version}/sdk.js"></script>`} />
           <p>
             Refer to the{" "}
             <a href="https://github.com/loomhq/loom-embed/blob/master/CHANGELOG.md">
