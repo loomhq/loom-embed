@@ -20,7 +20,7 @@ const NavMenu = () => (
       </h4>
       <MenuLink href="#oembed">.oembed()</MenuLink>
       <MenuLink href="#text-replace">.textReplace()</MenuLink>
-      <MenuLink href="#expand">.expand()</MenuLink>
+      <MenuLink href="#link-replace">.linkReplace()</MenuLink>
     </div>
     <div className="menu-section">
       <h4>

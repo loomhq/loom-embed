@@ -1,11 +1,12 @@
-import React, { Component, Fragment } from "react";
 import "./App.css";
 
-import Oembed from "./Oembed";
-import TextReplace from "./TextReplace";
-import NavMenu from "./NavMenu";
+import React, { Component, Fragment } from "react";
+
 import ExpandDocs from "./ExpandDocs";
 import GettingStarted from './GettingStarted';
+import NavMenu from "./NavMenu";
+import Oembed from "./Oembed";
+import TextReplace from "./TextReplace";
 
 const MethodHeading = ({ title, titleId, children }) => (
   <div className="method-block">
@@ -48,8 +49,8 @@ const ContentDocs = () => (
       </MethodHeading>
       <Oembed />
 
-      <MethodHeading title=".expand(selector, [options])" titleId="expand">
-        <p>Expands any video links at the nodes matching the selector</p>
+      <MethodHeading title=".linkReplace(selector, [options])" titleId="link-replace">
+        <p>Replaces any loom links with the embedded video at the nodes matching the selector</p>
       </MethodHeading>
       <ExpandDocs />
     </div>

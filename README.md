@@ -34,9 +34,9 @@ If installed by script tag, the methods are exposed through `window.loom`
 
 ## Methods
 
-### .expand(selector, [options])
+### .linkReplace(selector, [options])
 
-expands any loom links at the nodes matching the selector
+Replaces any loom links at the nodes matching the selector with the embedded video
 
 ### .textReplace(textString, [options])
 

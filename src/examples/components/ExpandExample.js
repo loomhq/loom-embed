@@ -1,10 +1,9 @@
+import './ExpandExample.css';
+
 import React, { Component, Fragment } from 'react';
 
-import { linkReplace } from "loom-embed";
-
 import { LINK_REPLACED_CLASS } from '../../sdk/common'
-
-import './ExpandExample.css';
+import { linkReplace } from "loom-embed";
 
 const DEFAULT_LOOM_LINK = "https://www.loom.com/share/0281766fa2d04bb788eaf19e65135184";
 const INITIAL_STATE = { fetching: false };
@@ -13,7 +12,7 @@ const LINK_SELECTOR = '.loom-video';
 class ExpandExample extends Component {
   state = INITIAL_STATE;
 
-  onFetchOembed = async () => {
+  onLinkReplace = async () => {
     if (this.state.fetching) { return; }
 
     try {
@@ -57,7 +56,7 @@ class ExpandExample extends Component {
             className={`button-base action-button ${
               fetching ? "disabled" : ""
             }`}
-            onClick={this.onFetchOembed}
+            onClick={this.onLinkReplace}
           >
             { fetching ? "Expanding..." : "Expand Links" }
           </div>
