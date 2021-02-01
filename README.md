@@ -34,9 +34,9 @@ If installed by script tag, the methods are exposed through `window.loom`
 
 ## Methods
 
-### .linkReplace(selector, [options])
+### .linkReplace(selector, [options], target)
 
-Replaces any loom links at the nodes matching the selector with the embedded video
+Replaces any loom links at the nodes matching the selector with the embedded video. Replacement occurs on the entire document, or on the optional target DOM element.
 
 ### .textReplace(textString, [options])
 
