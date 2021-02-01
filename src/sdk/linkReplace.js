@@ -16,8 +16,8 @@ const injectVideo = (linkNode, embedString) => {
   linkNode.parentNode.insertBefore(embedNode, linkNode);
 };
 
-const linkReplace = (selector = 'a', options = {}) => {
-  const linkNodes = [...document.querySelectorAll(selector)];
+const linkReplace = (selector = 'a', options = {}, target = document) => {
+  const linkNodes = [...target.querySelectorAll(selector)];
 
   linkNodes
     .filter(isValidLinkNode)
