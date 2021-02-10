@@ -1,7 +1,8 @@
-import { isValidEmbedUrl, isLoomUrl } from './validate';
+import { isLoomUrl, isValidEmbedUrl } from './validate';
+
 import { LOOM_HOSTNAME_CAPTURE } from './common';
 
-const SRC_URL_REGEX = /src=["']+(https?:\/\/[a-zA-z\d\.\/?&]+)/
+const SRC_URL_REGEX = /src=["']+(https?:\/\/[a-zA-z\d:\.\/?&]+)/
 
 const getResponsiveEmbedCode = (embedURL, heightAspectRatio) => {
   const padding = `${heightAspectRatio * 100}%`;
@@ -40,8 +41,13 @@ const buildLoomOembedUrl = (url, options) => {
   const maxHeight = height ? `&maxheight=${height}` : '';
 
   const [loomDomain] = url.match(LOOM_HOSTNAME_CAPTURE);
+  let loomBaseDomain = loomDomain;
 
-  return `https://www.${loomDomain}/v1/oembed?url=${url}${maxWidth}${maxHeight}`;
+  if (loomDomain === 'loom.com') {
+    loomBaseDomain = `www.${loomDomain}`;
+  }
+
+  return `https://${loomBaseDomain}/v1/oembed?url=${url}${maxWidth}${maxHeight}`;
 };
 
 const buildOembedUrl = (url, options) => {
