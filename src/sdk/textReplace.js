@@ -1,8 +1,9 @@
 import { LOOM_URL_MATCH_REGEX, LOOM_URL_REGEX } from './common';
+
 import oembed from './oembed';
 
 const normalizeUrls = (url) => {
-  const [,,, loomBaseUrl] = url.match(LOOM_URL_REGEX);
+  const [, loomBaseUrl] = url.match(LOOM_URL_REGEX);
 
   return {
     originalUrl: url,
