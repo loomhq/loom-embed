@@ -130,8 +130,14 @@ input {
   max-width: 600px;
 }
 
+.loom-heading {
+  display: flex;
+  align-items: center;
+}
+
 .loom-title {
-  color: #fd5e5f
+  height: 1em;
+  margin-right: 0.4ch;
 }
 
 .subtitle {
