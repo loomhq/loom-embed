@@ -1,9 +1,8 @@
 # Changelog
 
-## 1.0.0
-Initial release
+## 1.2.0-beta.0
 
-### Added
-- Support for fetching oembed metadata
-- Method to replace links from a given input
-- Method to auto expand/embed links
+### Features
+- Same functionality rewritten in TypeScript. 
+- New tests written for additional code coverage.
+
