@@ -19,7 +19,7 @@ npm install @loomhq/loom-embed
 ### script tag
 
 ```html
-<script src="hhttps://unpkg.com/@loomhq/loom-embed@1.1.7/dist/sdk.js"></script>
+<script src="https://unpkg.com/@loomhq/loom-embed@1.1.7/dist/sdk.js"></script>
 ```
 
 See the [CHANGELOG.md](https://github.com/loomhq/loom-embed/blob/master/CHANGELOG.md) for the latest version
