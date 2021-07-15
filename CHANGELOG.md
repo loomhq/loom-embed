@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.0-beta.0
+## 1.2.0-beta.1
 
 ### Features
 - Same functionality rewritten in TypeScript. 
